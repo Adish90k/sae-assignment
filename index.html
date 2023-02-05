@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="suballcontainer">
+        <h1>Log in to Blog</h1>
+        <div class="infocontainerdiv">
+          <label>Username</label>
+          <input type="text" id="Usernametxt" />
+          <label>Password</label>
+          <input type="text" id="Passwordtxt">
+          <div class="buttondiv">
+            <button onclick="Navigate()" id="Signinbtn">SIGN IN</button>
+            <button onclick="ClearInput()" id="Resetbtn">RESET</button>  
+          </div>
+         <span>Forgot password?</span>
+        </div>
+      </div>
+    </div>
+    <script>
+const Navigate=()=>location.replace("blog.html")
+const ClearInput = ()=>{
+  const Usernametxt = document.getElementById("Usernametxt");
+  const Passwordtxt = document.getElementById("Passwordtxt");
+  Usernametxt.value = " ";
+  Passwordtxt.value = " ";
+
+}    
+    </script>
+  </body>
+</html>
